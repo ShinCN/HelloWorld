@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvContacts"
+        android:layout_width="418dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/id_txt_TenSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="TenSP"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_tenSP"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edit_tenSP" />
+
+        <EditText
+        android:id="@+id/edit_tenSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_txt_MaSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MaSP"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_MaSP"
+        app:layout_constraintEnd_toEndOf="@+id/id_txt_TenSP"
+        app:layout_constraintStart_toStartOf="@+id/id_txt_TenSP"
+        app:layout_constraintTop_toTopOf="@+id/edit_MaSP" />
+
+    <EditText
+        android:id="@+id/edit_MaSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_tenSP" />
+
+    <TextView
+        android:id="@+id/id_txt_mota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mô tả"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_mota"
+        app:layout_constraintEnd_toEndOf="@+id/id_txt_MaSP"
+        app:layout_constraintStart_toStartOf="@+id/id_txt_MaSP"
+        app:layout_constraintTop_toTopOf="@+id/edit_mota" />
+
+    <EditText
+        android:id="@+id/edit_mota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_MaSP" />
+
+    <TextView
+        android:id="@+id/id_txt_gia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_price"
+        app:layout_constraintEnd_toEndOf="@+id/id_txt_mota"
+        app:layout_constraintStart_toStartOf="@+id/id_txt_mota"
+        app:layout_constraintTop_toTopOf="@+id/edit_price"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/rvContacts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_mota"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <Button
+        android:id="@+id/btn_addPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Product"
+        app:layout_constraintBottom_toTopOf="@+id/rvContacts"
+        app:layout_constraintEnd_toEndOf="@+id/edit_price"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="@+id/id_txt_gia"
+        app:layout_constraintTop_toBottomOf="@+id/edit_price"
+        app:layout_constraintVertical_bias="0.903" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
